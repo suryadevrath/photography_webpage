@@ -1,0 +1,104 @@
+ * {
+     box-sizing: border-box;
+     margin: 0%;
+     padding: 0%;
+     font-family: "Roboto", sans-serif ;
+
+ }
+
+ header {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 5px 10%;
+     background-color: transparent;
+ }
+
+ .logo{
+     cursor: pointer;
+     margin-right: auto;
+ }
+ 
+ li, a, button {
+     font-weight: 500;
+     font-size: 16px;
+     text-decoration: none;
+     color: black;
+     
+
+ }
+
+ nav ul li {
+     display: inline-block;
+     padding: 0px 40px;
+ }
+
+ nav ul li a {
+     transition: all 0.3s ease 0s;
+ }
+
+ nav ul li a:hover {
+     color: rgb(163, 91, 91);
+ }
+
+ .wrapper {
+     background: url("../img/pexels-gabriel-peter-696644.jpg") no-repeat center center / cover;
+     width: 100%;
+     display: block;
+     position: relative;
+     z-index: 1;
+ }
+
+ .wrapper:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    padding: 80px 10%;
+    justify-content: space-between;
+    color: aliceblue;
+
+}
+
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 10%;
+    background: linear-gradient(to right, #b5babb , #808283, #3e3f3f, #1c1d1c );
+    color: aliceblue;
+
+}
+
+#gallery .gallery {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 10%;
+    background: linear-gradient(to right, #b5babb , #808283, #3e3f3f, #1c1d1c );
+    color: aliceblue;
+
+
+
+}
+
+#contact .contact {
+    display: block;
+    flex-direction: column;
+    text-align:center;
+
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 10%;
+    background-color: black;
+    color: aliceblue;
+}
